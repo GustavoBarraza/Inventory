@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="src/css/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+  <title>Inventario de Tienda</title>
+</head>
+<body>
+  <h1>Inventory Guandres Signature</h1>
+  <h2>A luxury that makes you look good</h2>
+  <br />
+
+  <div class="formulario">
+    <input type="text" id="nombre" placeholder="Nombre del producto" oninput="soloLetras(this)" />
+    <input type="number" id="precio" placeholder="Precio" oninput="soloNumeros(this)" />
+    <input type="text" id="categoria" placeholder="Categoría" oninput="soloLetras(this)" />
+    <button id="btn-add-product">Agregar producto</button>
+  </div>
+
+  <!-- Tabla responsiva -->
+  <div class="table-responsive">
+    <table>
+      <thead>
+        <tr>
+          <th>Identificación</th>
+          <th>Nombre</th>
+          <th>Categoría</th>
+          <th>Precio</th>
+          <th>Acción</th>
+        </tr>
+      </thead>
+      <tbody id="tabla-productos">
+        <!-- Aquí se mostrarán los productos -->
+      </tbody>
+    </table>
+  </div>
+
+  <!-- SweetAlert2 (CDN) -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script type="module" src="src/JS/main.js"></script>
+</body>
+</html>

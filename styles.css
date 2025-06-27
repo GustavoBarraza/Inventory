@@ -1,0 +1,200 @@
+/* Global styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f4f6f8;
+  padding: 30px;
+  color: #333;
+}
+
+/* Main title */
+h1 {
+  font-family: 'Lobster', cursive;
+  color: #1a73e8;
+  text-align: center;
+  font-weight: 700;
+  font-size: 64px;
+  margin-bottom: 30px;
+}
+
+/* Subtitles (if needed) */
+h2 {
+  font-family: 'Segoe UI', sans-serif;
+  color: #555;
+  text-align: center;
+  font-weight: 400;
+  margin-top: 0;
+}
+
+/* Product form layout */
+.formulario {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: auto;
+  gap: 12px;
+  background: #ffffff;
+  padding: 24px;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+/* Inputs and buttons */
+input,
+button {
+  padding: 12px 16px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  outline: none;
+  transition: all 0.2s ease-in-out;
+}
+
+input:focus {
+  border-color: #1a73e8;
+  box-shadow: 0 0 0 2px rgba(26, 115, 232, 0.2);
+}
+
+button {
+  background: #1a73e8;
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #155cc0;
+}
+
+/* Table container for responsive */
+.table-responsive {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-top: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Product table */
+table {
+  width: 100%;
+  min-width: 600px;
+  border-collapse: collapse;
+  background: #ffffff;
+}
+
+th,
+td {
+  padding: 14px;
+  text-align: center;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+th {
+  background: #1a73e8;
+  color: white;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+/* Input inside table */
+td input {
+  width: 90%;
+  padding: 8px;
+  font-size: 14px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+/* Action buttons inside table */
+.acciones button {
+  background: #e53935;
+  border: none;
+  padding: 8px 14px;
+  font-size: 14px;
+  color: #fff;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+.acciones button:hover {
+  background: #b71c1c;
+}
+
+/* ========== RESPONSIVE SECTION ========== */
+
+@media (max-width: 768px) {
+  body {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  .formulario {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .table-responsive {
+   overflow: auto;
+   margin: 20px auto;
+   padding-bottom: 10px;
+   max-width: 100%;
+  }
+
+  table {
+    min-width: 500px;
+  }
+
+  th,
+  td {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  button {
+    font-size: 15px;
+    padding: 12px;
+  }
+
+  td input {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 32px;
+    text-align: center;
+    word-break: break-word;
+  }
+
+  h2 {
+    font-size: 16px;
+    text-align: center;
+}
+  .formulario {
+    padding: 16px;
+    gap: 10px;
+  }
+
+  table {
+    min-width: 400px;
+  }
+
+  th,
+  td {
+    font-size: 13px;
+    padding: 8px;
+  }
+
+  input,
+  button {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
